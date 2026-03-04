@@ -29,7 +29,6 @@ Welcome to the GitHub Security Audit project wiki! This comprehensive guide cove
 - [[FAQ]] - Frequently asked questions
 - [[Contributing]] - How to contribute
 - [[Changelog]] - Version history
-- [[License]] - Project license
 
 ---
 
@@ -191,9 +190,10 @@ See [[Usage Guide]] for more examples.
 
 ---
 
-## 📄 License
+## 📄 Usage Terms
 
-This project is provided under [MIT License](../LICENSE) - free for personal and commercial use.
+This project is for personal, educational, and internal non-commercial use.
+Commercial use requires prior written permission. See [LICENSE](../LICENSE) for full terms.
 
 ---
 

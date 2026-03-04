@@ -595,41 +595,36 @@ See [Handler Development](Handler-Development.md) for step-by-step guide.
 
 ### What license is this under?
 
-MIT License - Free for personal and commercial use.
+Personal Use License - Personal, educational, and internal non-commercial use only.
 
-See [LICENSE](LICENSE) file for full text.
+See [LICENSE](../LICENSE) for full terms.
 
 ### Can I use this commercially?
 
-Yes! MIT license allows commercial use without restrictions.
+No, not by default. Commercial use requires prior written permission from the project maintainer(s).
 
 ### Can I modify this code?
 
 Yes! You can:
 - Modify source code
 - Create derivatives
-- Use in commercial products
 - Redistribute
 
 Just:
 - Include original license
 - Credit original authors
 - Document changes
+- Keep usage non-commercial unless you have written permission
 
 ### Is there a warranty?
 
 No. This software is provided "as is" without warranty.
 
-See [LICENSE](LICENSE) for legal details.
+See [LICENSE](../LICENSE) for legal details.
 
 ### Can I sell this?
 
-Technically yes (MIT allows it), but:
-- Must include MIT license
-- Must credit original authors
-- Only ethical if you add significant value
-
-Consider contributing back to the open source project instead!
+No. Selling or other commercial use is not allowed unless you first obtain written permission from the project maintainer(s).
 
 ---
 

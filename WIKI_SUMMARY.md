@@ -60,10 +60,10 @@ Your GitHub Security Audit project is **fully sanitized** and **ready for public
    - Security statement
    - Support information
 
-2. **LICENSE** - MIT License
-   - Standard MIT open source license
-   - Permissive for commercial use
-   - Includes copyright notice
+2. **LICENSE** - Personal Use License
+   - Personal, educational, and internal non-commercial use
+   - Commercial use requires prior written permission
+   - Includes copyright notice and warranty disclaimer
 
 3. **CONTRIBUTING.md** - Contributing guidelines
    - How to report issues
@@ -170,7 +170,7 @@ Your GitHub Security Audit project is **fully sanitized** and **ready for public
 - `CONTRIBUTING.md` - ✅ Standard guidelines
 - `CODE_OF_CONDUCT.md` - ✅ Professional code
 - `SECURITY.md` - ✅ Security policy
-- `LICENSE` - ✅ MIT license
+- `LICENSE` - ✅ Personal-use non-commercial license
 - `PUBLICATION_GUIDE.md` - ✅ Publishing steps
 
 ---
@@ -297,7 +297,7 @@ Your GitHub Security Audit project is **fully sanitized** and **ready for public
 4. **Security First** - Audit-only, no destructive operations
 5. **Enterprise Safe** - No external data transmission
 6. **Community Focused** - Clear guidelines and policies
-7. **Open Source** - MIT licensed, free for all uses
+7. **Usage-Controlled** - Personal-use license; commercial use by permission
 
 ---
 

@@ -52,7 +52,7 @@ This comprehensive guide walks through publishing your GitHub Security Audit pro
 ### 4. File Structure
 
 - [x] README.md - Project overview ✅
-- [x] LICENSE - MIT license ✅
+- [x] LICENSE - Personal-use non-commercial license ✅
 - [x] CONTRIBUTING.md - How to contribute ✅
 - [x] CODE_OF_CONDUCT.md - Community standards ✅
 - [x] SECURITY.md - Security policy ✅
@@ -341,11 +341,11 @@ Track these after publication:
 
 ### Q: Can anyone use this?
 
-**A:** YES - it's MIT licensed:
+**A:** YES - under personal-use terms:
 - ✅ Free for personal use
-- ✅ Free for commercial use
-- ✅ Can modify and redistribute
-- ✅ Just include license
+- ✅ Can modify and redistribute for non-commercial use
+- ❌ Commercial use requires prior written permission
+- ✅ Must keep license text
 
 ### Q: Is it enterprise-safe?
 

@@ -1,6 +1,6 @@
 # GitHub Security Audit
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Personal%20Use%20Only-orange.svg)](LICENSE)
 [![Bash 4.0+](https://img.shields.io/badge/Bash-4.0+-green.svg)](https://www.gnu.org/software/bash/)
 [![GitHub CLI](https://img.shields.io/badge/Requires-GitHub--CLI-black.svg)](https://cli.github.com)
 
@@ -242,9 +242,9 @@ Contributions welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for:
 
 ## 📄 License
 
-MIT License - Free for personal and commercial use.
+Personal Use License - Personal, educational, and internal non-commercial use only.
 
-See [LICENSE](LICENSE) for full text and details.
+Commercial use requires prior written permission. See [LICENSE](LICENSE) for full terms.
 
 ## 📞 Support
 
