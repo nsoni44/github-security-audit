@@ -1,12 +1,18 @@
-# GitHub Security Audit - Quick Start Guide
+# SVETRI - Quick Start Guide
 
-## Overview
+**GitHub Security Intelligence - Professional Security Audit Tool**
 
-This is a **modular GitHub security audit system** with:
-- **Master orchestrator script** that coordinates multiple security audits
-- **Individual handler scripts** for specific security features
-- **Shared utility library** for common functions
-- **Structured reporting** in CSV, Markdown, and JSON formats
+```
+....                                                                  
+...................                                                   
+............                                                          
+..........                                                            
+.........                            .                                
+........                            ..     .   .                      
+........                           .''      ......                    
+```
+
+This is a **professional Github security audit system** that automatically scans your repositories across 5 major security domains and generates comprehensive reports.
 
 ---
 

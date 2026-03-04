@@ -1,32 +1,8 @@
-#!/usr/bin/env bash
-# Common utilities for GitHub security audit handlers
+# SVETRI Branding & Identity
 
-# Color codes for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
+## The SVETRI Mascot
 
-# Logging functions
-log_info() {
-  echo -e "${BLUE}[INFO]${NC} $*"
-}
-
-log_success() {
-  echo -e "${GREEN}[✓]${NC} $*"
-}
-
-log_error() {
-  echo -e "${RED}[ERROR]${NC} $*" >&2
-}
-
-log_warn() {
-  echo -e "${YELLOW}[WARN]${NC} $*"
-}
-
-show_svetri_banner() {
-  cat <<'EOF'
+```
 ....                                                                  
 ...................                                                   
 ............                                                          
@@ -74,73 +50,68 @@ K0o;...   ... ......''',;;cdllxOXXXo'.............,;;:c::olllc:...
 KKd'...  ... .......'',;:loxxxOKXXx'....'',....'',:cc;clolllll;...    
 ok0;.. . ..........'',;;llox0KXNN0'. .,,,,,'',',::lll:cdkoollc,...    
 c:d:  .  ..........'',;;:okOKXNXKo ..,;c;,,',,,;:colodcxOoolc:'..     
+```
 
-      SVETRI :: GitHub Security Intelligence
-EOF
-}
+## Project Name
 
-# Check prerequisites
-check_gh_installed() {
-  if ! command -v gh >/dev/null 2>&1; then
-    log_error "GitHub CLI (gh) is not installed."
-    return 1
-  fi
-  return 0
-}
+**SVETRI** = **S**ecurity **V**erification **E**nterprise **T**ool **R**epository **I**ntelligence
 
-check_gh_authenticated() {
-  if ! gh auth status >/dev/null 2>&1; then
-    log_error "gh is not authenticated. Run: gh auth login"
-    return 1
-  fi
-  return 0
-}
+A professional, intelligent security audit tool for GitHub repositories.
 
-check_prerequisites() {
-  check_gh_installed || return 1
-  check_gh_authenticated || return 1
-  
-  # Check other required commands
-  for cmd in jq date; do
-    if ! command -v "$cmd" >/dev/null 2>&1; then
-      log_error "Required command '$cmd' is not installed."
-      return 1
-    fi
-  done
-  
-  return 0
-}
+## Identity
 
-# Get list of all repos for owner
-get_repos() {
-  local owner="$1"
-  gh repo list "$owner" --limit 500 --json nameWithOwner,visibility,isArchived --jq '.[] | @base64'
-}
+- **Girl-face ASCII mascot** - Professional, friendly, approachable
+- **Dotted character art style** - Modern, technical aesthetic  
+- **Tagline**: "GitHub Security Intelligence"
+- **Color scheme**: Terminal-friendly (works in all terminals)
+- **Compatible**: All platforms (macOS, Linux, Windows via WSL)
 
-# Parse Base64 encoded repo data
-decode_repo_json() {
-  local row="$1"
-  echo "$row" | base64 --decode
-}
+## Where The Mascot Appears
 
-# Create output directory
-ensure_report_dir() {
-  local report_dir="$1"
-  mkdir -p "$report_dir"
-}
+The SVETRI mascot appears every time you run:
 
-# Generate timestamp
-get_timestamp() {
-  date +%Y%m%d_%H%M%S
-}
+1. **Main audit command**
+   ```bash
+   ./scripts/audit_master.sh YOUR_USERNAME reports
+   ```
 
-# Generate human-readable date
-get_readable_date() {
-  date
-}
+2. **Security improvements command**
+   ```bash
+   ./scripts/apply_security_improvements.sh YOUR_USERNAME true
+   ```
 
-# Export functions for use in handlers
-export -f log_info log_success log_error log_warn
-export -f show_svetri_banner
-export -f check_gh_installed check_gh_authenticated check_prerequisites
-export -f get_repos decode_repo_json ensure_report_dir get_timestamp get_readable_date
+3. **Direct banner display**
+   ```bash
+   source lib/common.sh && show_svetri_banner
+   ```
+
+## Brand Guidelines
+
+- ✅ Always display banner at tool startup
+- ✅ Include ASCII art in all major output
+- ✅ Use consistent logging with color codes
+- ✅ Maintain professional tone in messages
+- ✅ Show "SVETRI :: GitHub Security Intelligence" tagline
+- ✅ Keep mascot centered in terminal output
+
+## Design Philosophy
+
+The SVETRI girl-face mascot represents:
+- **Approachability** - Easy to use, not intimidating
+- **Intelligence** - Advanced security analysis
+- **Trust** - Professional, reliable tool
+- **Care** - Designed with user experience in mind
+- **Uniqueness** - Distinctive brand identity
+
+## File Locations
+
+- **Mascot Definition**: `lib/common.sh` (function: `show_svetri_banner()`)
+- **Original Screenshot**: `Screenshot_20201122_100058.jpg`
+- **ASCII Conversions**: `art_samples/screenshot_ascii_*.txt`
+- **Source Image**: `Screenshot_20201122_100058.jpg` (width=70 ASCII art used)
+
+## See Also
+
+- [README.md](README.md) - Main documentation
+- [ARCHITECTURE.md](ARCHITECTURE.md) - System design
+- [QUICKSTART.md](QUICKSTART.md) - Getting started

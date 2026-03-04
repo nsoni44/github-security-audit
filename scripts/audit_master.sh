@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Master GitHub Security Audit Orchestrator
+# Master SVETRI Security Audit Orchestrator
 # Coordinates all security handlers and generates consolidated reports
 
 set -euo pipefail
@@ -26,7 +26,10 @@ trap "rm -rf $TEMP_DIR" EXIT
 # Initialize
 ensure_report_dir "$REPORT_DIR"
 
-log_info "Starting GitHub Security Audit for owner: $OWNER"
+show_svetri_banner
+echo ""
+
+log_info "Starting SVETRI security audit for owner: $OWNER"
 log_info "Timestamp: $TS"
 log_info "Report directory: $REPORT_DIR"
 
@@ -106,7 +109,7 @@ TOTAL_REPOS=$(tail -n +2 "$TEMP_DIR/secret_scanning_output.csv" 2>/dev/null | wc
 
 # Start markdown report
 {
-  echo "# GitHub Security Audit Report"
+  echo "# SVETRI Security Audit Report"
   echo ""
   echo "**Owner:** $OWNER"  
   echo "**Generated:** $(get_readable_date)"

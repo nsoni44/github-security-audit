@@ -30,8 +30,11 @@ fi
 # Check prerequisites
 check_prerequisites
 
+show_svetri_banner
+echo ""
+
 log_warn "=================================================="
-log_warn "GitHub Repository Security Improvements"
+log_warn "SVETRI Repository Security Improvements"
 log_warn "=================================================="
 log_info "Owner: $OWNER"
 log_info "Dry Run: $DRY_RUN"
