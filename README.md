@@ -1,46 +1,128 @@
-# GitHub Security Audit
+# SVETRI - GitHub Security Intelligence
+
+```
+....                                                                  
+...................                                                   
+............                                                          
+..........                                                            
+.........                            .                                
+........                            ..     .   .                      
+........                           .''      ......                    
+........                   ....   ..,;..    ......                    
+.......                  ..';:lll:::ll;;,,'.. ...                     
+......                  ..',:ldxkkxxdddkOOOd:,...                     
+......                  ..',:ldxkO00KKKKXXX0dko:..                    
+.....                  ...',:ldkOO0KKKKXXNNXkX0d;....                 
+ ...                   ...',:cdkO0KKKKKXXNNNK0Xk; ....                
+                       ...',:ldkO0KKKKXXXNNXOKXO, .....               
+                       ....,:ldk0000KKXXNNNNX0Ok'  .....              
+                      .......':dk0000KKK0000KKkx.  ......             
+                    ...    ....;okO00Od:,;cx00xc .  .....             
+                    .......':...,oOKOo,..';;dO0; .. ......            
+                    ..,,,,,;;,..'dXX0d::cdxk0XK.  .........           
+                    ..';clllc;'.,kNNNX0OOKXNNNl   .........           
+                     ..,clooc'..c0NXXXXXNNNNN0.   ..........          
+                     ..,:lodc..;dKNXKO0KXXXXK'     .........          
+                     ..';ccc;,.,lOKXXOO0KXKO:      .........          
+                      ..;:;'.',ldkXXXOkO00k'       ..........         
+      ..               .';,'..,:lldxOOkOk:.         .........         
+                     .   .'';:cloxk00Od;.           .........         
+                   . ..   ..;ldOKXX0kc.             .........         
+  .....     .         ...   .,ldxkxdo:'.             ...'.....        
+........   ..       . ........lodxkxoc,.             ....'.....       
+.',''''..  .        .. ....'''okkOOkxl'.              ....''.'.       
+;:,'',;;.           .. ....,,'lkkkkxdc'.               ....'''..      
+ooc::c;,..           .. ..'',;cxOOkkxo;.           .     ...''.'.     
+odddkOOdc..            ...',':lxO00Okoc'.     .   ....    .'.''...    
+lOOO0K0x;.            .....'';lxkOxdddl:.   ...   .....  .,.,''...    
+kx00KKOo'.              ....,,:dk0KKKko,.. ....  ....   ..'..,,....   
+00OKXKx:.         .....  ....,;lokO00k;.... ..  ...........''';...    
+KX0OX0d..        . ..........';:lxKX0c'...  ....... ......','';....   
+XNXk0Oo.           ...........,:o0K0o'....   .....     ...',,,;...    
+KNXkkO:.     .     .........'.,cxK0d;'..    ....    .....'',:;:.      
+XX0kod,.  .... ... .........',:okOkl;'.    ......  ..''..',;::c'      
+XKOdcl'....... ... ........:cclldddd:'.    .... .  ..,;;'',::c:,.     
+K0ko,:...  ..........'.'',,locccok0k:'.    .........';:c;,:::cc,.     
+KOdc''.   ... ......'''',;::l:ldOXXO;..    .........':c:;c:lclc'..    
+K0o;...   ... ......''',;;cdllxOXXXo'.............,;;:c::olllc:...    
+KKd'...  ... .......'',;:loxxxOKXXx'....'',....'',:cc;clolllll;...    
+ok0;.. . ..........'',;;llox0KXNN0'. .,,,,,'',',::lll:cdkoollc,...    
+c:d:  .  ..........'',;;:okOKXNXKo ..,;c;,,',,,;:colodcxOoolc:'..     
+```
+
+**SVETRI :: GitHub Security Intelligence**
+
+*Professional-grade security audit system for GitHub repositories*
 
 [![License](https://img.shields.io/badge/License-Personal%20Use%20Only-orange.svg)](LICENSE)
 [![Bash 4.0+](https://img.shields.io/badge/Bash-4.0+-green.svg)](https://www.gnu.org/software/bash/)
 [![GitHub CLI](https://img.shields.io/badge/Requires-GitHub--CLI-black.svg)](https://cli.github.com)
+[![Production Ready](https://img.shields.io/badge/Status-Production--Ready-blue.svg)](docs/ARCHITECTURE.md)
 
-A modular, production-ready security audit system for GitHub repositories with comprehensive coverage across multiple security domains.
+Comprehensive, modular security audit system for GitHub repositories with coverage across **5 major security domains** and **160+ metrics**.
 
-## 🎯 Features
+## 🎯 SVETRI Features
 
-- 🔐 **Secret Scanning** - Detect secret scanning & push protection status
-- 📦 **Dependency Management** - Audit Dependabot configurations
-- 🔒 **Branch Protection** - Verify branch safety rules
-- 🔍 **Code Scanning** - Check GitHub Advanced Security (GHAS)
-- ⚙️ **Repository Config** - Audit repository settings & metadata
-- 📊 **160+ Metrics** - Comprehensive security coverage
-- 📈 **Multi-format Reports** - Markdown, JSON, CSV output
-- ✅ **Production Ready** - Error handling, logging, validation
-- 🔧 **Extensible** - Easy to add custom handlers
-- 🚀 **CI/CD Ready** - GitHub Actions & GitLab CI templates
+**Comprehensive Security Auditing:**
+- 🔐 **Secret Scanning** - Real-time secret detection & push protection
+- 📦 **Dependency Management** - Dependabot version & security updates
+- 🔒 **Branch Protection** - Code review requirements, force-push prevention
+- 🔍 **Code Scanning** - Advanced CodeQL analysis & vulnerability detection
+- ⚙️ **Repository Config** - Settings, privacy, and metadata verification
 
-## ⚡ Quick Start
+**Professional Reports:**
+- 📊 **160+ Security Metrics** - Per-repository coverage
+- 📈 **Multi-format Output** - Markdown, JSON, CSV reports
+- 🎯 **Executive Summary** - High-level security overview
+- 📋 **Detailed Analysis** - Per-domain breakdown & recommendations
+
+**Enterprise Ready:**
+- ✅ **Production Grade** - Error handling, validation, logging
+- 🚀 **CI/CD Integration** - GitHub Actions, GitLab CI, Jenkins
+- 🔧 **Extensible Architecture** - Easy custom handlers
+- 📡 **Automation Ready** - Bulk improvements, scheduled audits
+- 🔐 **Security First** - Read-only, no credential storage, transparent
+
+## ⚡ Run Your First Audit (30 seconds)
 
 ```bash
-# 1. Install prerequisites
-brew install gh jq          # macOS
-# or: sudo apt-get install gh jq    # Ubuntu/Debian
+# 1. Install prerequisites (if needed)
+brew install gh jq
 
-# 2. Clone repository
-git clone https://github.com/YOUR_USERNAME/github-security-audit.git
+# 2. Clone SVETRI
+git clone https://github.com/nsoni44/github-security-audit.git
 cd github-security-audit
 
-# 3. Authenticate with GitHub
+# 3. Authenticate with GitHub (one-time setup)
 gh auth login
 
-# 4. Run audit
+# 4. Run SVETRI audit on your repositories
 ./scripts/audit_master.sh YOUR_GITHUB_USERNAME reports
-
-# 5. View results
-cat reports/github_security_audit_report_*.md
 ```
 
-**Need more time?** See [Installation Guide](wiki/Installation.md).
+**You'll see the SVETRI banner and a live security audit of all your repositories:**
+
+```
+[Output shows SVETRI girl-face ASCII banner]
+
+[INFO] Starting SVETRI security audit for YOUR_GITHUB_USERNAME
+[INFO] Running security handlers...
+
+[✓] Handler completed: secret_scanning
+[✓] Handler completed: dependabot  
+[✓] Handler completed: branch_protection
+[✓] Handler completed: code_scanning
+[✓] Handler completed: repo_config
+
+[✓] Audit completed successfully!
+[INFO] Reports generated:
+  - reports/github_security_audit_report_*.md
+  - reports/github_security_audit_stats_*.json
+```
+
+**Reports are instantly ready** to review in `reports/` folder.
+
+📖 [Full Installation Guide →](wiki/Installation.md)
 
 ## 📊 What Gets Audited?
 
