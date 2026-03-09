@@ -148,6 +148,19 @@ After identifying gaps in your audit results, automatically apply security impro
 - **Dependabot Updates** - Keep dependencies current with daily update checks (0→10 enabled)
 
 See [Improvements Guide](wiki/Improvements-Guide.md) for detailed step-by-step instructions.
+
+### Preventive CodeQL Guardrail
+
+Run this before bulk changes to catch deprecated CodeQL versions, unsafe autobuild usage, and language/source mismatches:
+
+```bash
+./scripts/codeql_preflight_guard.sh YOUR_USERNAME reports true
+```
+
+- Generates `reports/codeql_preflight_*.csv` and `reports/codeql_preflight_*.md`
+- Exits non-zero when critical findings are detected (with third arg `true`)
+- Is automatically executed by `apply_security_improvements.sh`
+
 | **Dependabot** | Security updates, Version updates | 2 |
 | **Branch Protection** | Rules active, Code reviews, Status checks | 3 |
 | **Code Scanning** | Scanning enabled, CodeQL, Alerts | 3 |

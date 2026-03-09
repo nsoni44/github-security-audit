@@ -67,6 +67,27 @@ fi
 log_warn "=================================================="
 
 #############################################################################
+# Preflight Guardrail
+#############################################################################
+
+log_info ""
+log_info "Preflight: Running CodeQL guardrail audit..."
+log_info "=================================================="
+if [[ "$DRY_RUN" == "true" ]]; then
+    if ! bash "${SCRIPT_DIR}/codeql_preflight_guard.sh" "$OWNER" "${SCRIPT_DIR}/../reports" false; then
+        log_warn "Preflight completed with warnings"
+    fi
+else
+    if ! bash "${SCRIPT_DIR}/codeql_preflight_guard.sh" "$OWNER" "${SCRIPT_DIR}/../reports" true; then
+        log_error "Preflight found critical CodeQL risks. Resolve findings or run with ALLOW_RISKY_CODEQL=true"
+        if [[ "${ALLOW_RISKY_CODEQL:-false}" != "true" ]]; then
+            exit 2
+        fi
+        log_warn "ALLOW_RISKY_CODEQL=true set, continuing despite critical findings"
+    fi
+fi
+
+#############################################################################
 # Execute all improvement scripts
 #############################################################################
 

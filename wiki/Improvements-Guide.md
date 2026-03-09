@@ -160,16 +160,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v2
+        uses: github/codeql-action/init@v3
         with:
-          languages: 'javascript,typescript,python,java,cpp,csharp,go,ruby'
+          languages: 'javascript,typescript,python,ruby,actions'
           queries: security-and-quality
 
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@v2
-
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v2
+        uses: github/codeql-action/analyze@v3
 ```
 
 2. Commit and push to repository

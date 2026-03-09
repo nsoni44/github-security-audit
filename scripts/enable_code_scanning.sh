@@ -14,13 +14,13 @@ source "${SCRIPT_DIR}/../lib/common.sh"
 # Configuration
 DRY_RUN="${1:-false}"
 OWNER="${2:-}"
-LANGUAGES="${3:-javascript,typescript,python,java,cpp,csharp,go,ruby}"
+LANGUAGES="${3:-javascript,typescript,python,ruby,actions}"
 
 # Validate inputs
 if [[ -z "$OWNER" ]]; then
     log_error "Usage: $0 <dry-run|true|false> <owner> [languages]"
     log_info "Example: $0 false nsoni44"
-    log_info "Languages: javascript,typescript,python,java,cpp,csharp,go,ruby"
+    log_info "Languages: javascript,typescript,python,ruby,actions"
     exit 1
 fi
 
@@ -86,17 +86,16 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v2
+        uses: github/codeql-action/init@v3
         with:
-          languages: 'javascript,typescript,python,java,cpp,csharp,go,ruby'
+          languages: '__CODEQL_LANGUAGES__'
           queries: security-and-quality
 
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@v2
-
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v2
+        uses: github/codeql-action/analyze@v3
 EOF
+
+CODEQL_WORKFLOW="${CODEQL_WORKFLOW/__CODEQL_LANGUAGES__/$LANGUAGES}"
 
 #############################################################################
 # Process each repository
